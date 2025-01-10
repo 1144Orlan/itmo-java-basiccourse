@@ -13,7 +13,9 @@ public class Main {
 
         //3
         String uncensoredSpecificText = "- Вместо нормальных сигарет бяка какая-то! \n- Да сейчас вместо всего бяка сплошная!";
-        System.out.println(censorThisSpecificText(uncensoredSpecificText));
+        String targetWord = "бяка";
+        String replacementText = "[вырезано цензурой]";
+        System.out.println(censorThisSpecificText(uncensoredSpecificText, targetWord, replacementText));
 
         //4
         String stringText = "The first line of Lorem Ipsum, \" Lorem Ipsum dolor sit amet..\", comes from a line in section 1.10.32.";
@@ -50,8 +52,8 @@ public class Main {
     }
 
     //3
-    public static String censorThisSpecificText(String text) {//
-        String censoredText = text.replace("бяка", "[вырезано цензурой]");
+    public static String censorThisSpecificText(String text, String targetWord, String replacementText) {//
+        String censoredText = text.replace(targetWord, replacementText);
         return censoredText;
     }
 

@@ -20,6 +20,38 @@ public class Dog {
         this.chipped = chipped;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getBreed() {
+        return breed;
+    }
+
+    public void setBreed(String breed) {
+        this.breed = breed;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public boolean isChipped() {
+        return chipped;
+    }
+
+    public void setChipped(boolean chipped) {
+        this.chipped = chipped;
+    }
+
     public String toString() {
         return "Dog{" +
                 "breed='" + breed + '\'' +
